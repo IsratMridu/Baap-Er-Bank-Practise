@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <!-- tailwind css link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-200">
+    <section class="mt-16 bg-green-100 w-4/5 mx-auto rounded">
+
+        <h1 class="text-5xl text-center pt-10">Welcome to your account</h1>
+        <p class="text-xl text-center mt-8">Here You can do two basic operation. You can deposit money into your
+            account
+            and
+            you can can withdraw money
+            from your account. Everyrime you compelet a transaction. Total balance in your account will be
+            automatically updated.</p>
+        <br><br>
+    </section>
+    <section>
+
+        <div class="grid grid-cols-3 w-4/5 mx-auto gap-10 bg-gray-100 mt-16 rounded p-10">
+            <div class="bg-red-400 rounded">
+                <h1 class="text-3xl py-2 text-center">Total Deposit</h1>
+                <h3 class="text-3xl text-center  mb-4" id="depositBalance">00</h3>
+                <input type="text" placeholder="Enter Amount" class="block mx-auto w-4/5 p-4 rounded" id="depositInput">
+                <br>
+                <button class=" bg-blue-600 text-center px-5 py-3 text-white text-3xl w-full font-bold"
+                    id="depositButton">Deposit</button>
+                <br>
+                <br>
+            </div>
+            <div class="bg-yellow-400 rounded flex justify-center flex-col">
+                <h1 class="text-3xl  py-2 text-center">Balance</h1>
+                <h3 class="text-3xl text-center" id="balanceTotal">1000</h3>
+
+            </div>
+            <div class="bg-green-400 rounded">
+                <h1 class="text-3xl py-2 text-center">Total Withdraw</h1>
+                <h3 class="text-3xl text-center  mb-4" id="withdrawBalance">00</h3>
+                <input type="text" placeholder="Enter Amount" class="block mx-auto w-4/5 p-4 rounded"
+                    id="withdrawInput">
+                <br>
+                <button class=" bg-blue-600 text-center px-5 py-3 text-white text-3xl w-full font-bold"
+                    id="withdrawButton">Withdraw</button>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <script src="updated.js"></script>
+</body>
+
+</html>
